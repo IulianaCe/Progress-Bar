@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lumanosimo&family=Mulish:wght@200&family=Pacifico&family=Quicksand:wght@300&family=Raleway:wght@200&display=swap');
+ 
+#progress{
+    position: relative;
+    margin-bottom: 30px;
+ }
+
+ #progress-bar{
+    position: absolute;
+    background: rgb(30, 167, 160);
+    height: 5px;
+    width: 0%;
+    top: 50%;
+    left: 0;
+ }
+ #progress-num{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between
+ }
+ #progress-num:before{
+    content:"";
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    z-index:-1;
+ }
+
+#progress-num .step{
+    border: 3px solid lightgray;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    Background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+#progress-num .step.active{
+    border-color: lightseagreen;
+    background-color: lightseagreen;
+    color: #fff;
+}
+.button-btn{
+    background-color: lightseagreen; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
